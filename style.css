@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  min-width: 250px;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  background-color: #252422;
+  /* background-image: linear-gradient(355deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+  overflow: hidden;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 2%;
+  padding: 0;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 9px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  border-radius: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  margin: 1.2%;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 9px 20px 12px 20px;
+}
+.close:hover {
+  background-color: #eb5e28;
+  color: #fffcf2;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.header {
+  background-color: #eb5e28;
+  padding: 30px 40px;
+  color: #fffcf2;
+  text-align: center;
+  margin: 2%;
+  border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.title{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#d9d9d9;
+  margin-top:2%;
+  margin-bottom: -1.8%;
+  margin-left: 20.5%;
+  font-size: 35px;
+}
+
+input {
+  margin: 0;
+  border: none;
+  /* border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; */
+  border-radius: 20px;
+  width: 80%;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 15%;
+  background: #d9d9d9;
+  color: #403D39;
+  float: right;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  border-radius: 20px;
+}
+.addBtn:hover {
+  background-color: #bbb;
+}/*# sourceMappingURL=style.css.map */
